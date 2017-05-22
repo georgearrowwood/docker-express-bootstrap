@@ -1,0 +1,32 @@
+{
+  "name": "docker-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "lint": "eslint .",
+    "test": "mocha tests/unit",
+    "coverage": "istanbul cover --report text --report lcov --dir tests/coverage _mocha -- tests/unit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "express": "4.15.3",
+    "joi": "10.4.2",
+    "axios": "0.16.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint-config-standard-trailing-commas": "6.1.0",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-standard": "^2.0.1",
+    "istanbul": "0.4.5",
+    "mocha": "^3.4.1",
+    "nodemon": "1.11.0",
+    "rewire": "^2.5.2",
+    "standard": "^8.6.0"
+  }
+}
